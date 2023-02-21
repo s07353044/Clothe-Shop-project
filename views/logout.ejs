@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <title><%= user.name%>'s Profile</title>
+  </head>
+  <body>
+    <section id="header">
+      <a class="navbar-b" href="http://localhost:8080/">Free Style</a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="Ig-bag">
+            <a href="/auth/login"><i class="far fa-shopping-bag"></i></a>
+          </li>
+          <% if(user) {%>
+          <a href="/auth/logout">
+            <img
+              style="border-radius: 50%; width: 25%; height: 25%"
+              src="<%= user.thumbnail%>"
+          /></a>
+          <%}%>
+        </ul>
+      </div>
+    </section>
+
+    <h1>User Name: <%= user.name%></h1>
+    <h1>Email: <%= user.email%></h1>
+    <a
+      href="/"
+      style="
+        background-color: rgb(86, 26, 19);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        font-size: 25px;
+      "
+      >Logout</a
+    >
+  </body>
+</html>

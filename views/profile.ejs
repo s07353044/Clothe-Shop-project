@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width,initial-scale=1.0" />
+    <title>Free Style</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <section id="header">
+      <a class="navbar-b" href="/">Free Style</a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="Ig-bag">
+            <i class="far fa-shopping-bag"></i>
+          </li>
+          <% if(user) {%>
+          <a href="/auth/logout">
+            <img
+              style="border-radius: 50%; width: 25%; height: 25%"
+              src="<%= user.thumbnail%>"
+          /></a>
+          <%}%>
+        </ul>
+      </div>
+    </section>
+    <section id="hero">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/01.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/02.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/03.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/04.jpg" />
+          </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <h2>Featured Products</h2>
+    <section class="section-p1">
+      <div class="products_01">
+        <div class="image-container">
+          <a href="Shopping Car_01.html" class="btn btn-primary_01">
+            <img src="./img/01.jpg" alt="picture" />
+          </a>
+        </div>
+        <p class="products-title">GRND 韓國長版灰色毛呢大衣</p>
+        <p class="prices">NT$ 1990</p>
+        <button class="button_product_detail" type="button">瀏覽規格</button>
+      </div>
+      <div class="products_01">
+        <div class="image-container">
+          <a href="Shopping Car_01.html" class="btn btn-primary_01">
+            <img src="./img/02.jpg" alt="picture" />
+          </a>
+        </div>
+        <p class="products-title">GRND 韓國長版灰色格紋毛呢大衣</p>
+        <p class="prices">NT$ 1250</p>
+        <button class="button_product_detail" type="button">瀏覽規格</button>
+      </div>
+      <div class="products_01">
+        <div class="image-container">
+          <a href="Shopping Car_01.html" class="btn btn-primary_01">
+            <img src="./img/03.jpg" alt="picture" />
+          </a>
+        </div>
+        <p class="products-title">GRND 韓國長版黑色無扣毛呢大衣</p>
+        <p class="prices">NT$ 1500</p>
+        <button class="button_product_detail" type="button">瀏覽規格</button>
+      </div>
+      <div class="products_01">
+        <div class="image-container">
+          <a href="Shopping Car_01.html" class="btn btn-primary_01">
+            <img src="./img/04.jpg" alt="picture" />
+          </a>
+        </div>
+        <p class="products-title">GRND 韓國長版米色排扣毛呢大衣</p>
+        <p class="prices">NT$ 1800</p>
+        <button class="button_product_detail" type="button">瀏覽規格</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

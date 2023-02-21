@@ -1,0 +1,17 @@
+<section id="header">
+  <a class="navbar-b" href="http://localhost:8080/">Free Style</a>
+  <div>
+    <ul id="navbar">
+      <li><a class="list ctive" href="/">Home</a></li>
+      <li><a class="list href="shop.html">Shop</a></li>
+      <li><a class="list" href="about.html">About</a></li>
+      <li><a class="list" href="/auth/login">Login</a></li>
+      <li id="Ig-bag">
+        <a href="/auth/login"><i class="far fa-shopping-bag"></i></a>
+      </li>
+      <% if(user) {%>
+      <a href="/auth/logout"> <img src="<% user.thumbnail%>" /></a>
+      <%}%>
+    </ul>
+  </div>
+</section>

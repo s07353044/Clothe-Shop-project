@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("nav") %>
+    <div style="display: flex; padding-top: 5rem; padding-left: 5rem">
+      <img
+        style="display: flex; width: 550px; height: 650px; padding-right: 5rem"
+        src="/img/01.jpg"
+        alt=""
+      />
+      <div
+        style="
+          width: 550px;
+          height: 650px;
+          padding-top: 5rem;
+          padding-left: 2rem;
+          background-color: rgba(245, 245, 245, 1);
+          border-radius: 15%;
+        "
+      >
+        <h1 style="font-size: 40px">GRND 韓國長版灰色毛呢大衣</h1>
+        <h1 style="font-size: 30px; padding-top: 2rem">NT$ 1990</h1>
+        <h2 style="font-size: 15px; padding-right: 30rem">顏色</h2>
+        <div style="display: flex">
+          <label
+            type="button"
+            class="btn_01"
+            style="
+              display: flex;
+              width: 50px;
+              height: 50px;
+              justify-content: center;
+              align-items: center;
+              border-radius: 10%;
+              border-style: solid;
+            "
+          >
+            灰
+          </label>
+
+          <label
+            type="button"
+            class="btn_02"
+            style="
+              display: flex;
+              width: 50px;
+              height: 50px;
+              justify-content: center;
+              align-items: center;
+              border-radius: 10%;
+              border-style: solid;
+            "
+          >
+            黑
+          </label>
+        </div>
+        <h2 style="font-size: 15px; padding-right: 30rem">大小</h2>
+        <div style="display: flex">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+          <button>XXL</button>
+        </div>
+        <h2 style="font-size: 15px; padding-right: 30rem">數量</h2>
+        <div style="display: flex">
+          <button>+</button>
+          <input type="text" min="1" value="1" />
+          <button>-</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
